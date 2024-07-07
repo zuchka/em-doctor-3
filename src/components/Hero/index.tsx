@@ -16,13 +16,10 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
-                  Open-source SaaS Starter Kit and Boilerplate for Next.js
+                  Chart less. Bill more.
                 </h1>
                 <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
-                  Next.js SaaS Boilerplate and Starter Kit designed and built
-                  for SaaS startups. It comes with all necessary integrations,
-                  pages, and components you need to launch a feature-rich SaaS
-                  websites.
+                  Chart Gold was made specifically for Emergency Medicine departments and their overworked physician. Its intelligent feedback minimizes the time spent charting and maximizes the opportunities for billing. Doctors should be doctors, not scribes.
                 </p>
                 <ul className="mb-10 flex flex-wrap items-center justify-center gap-5">
                   <li>
@@ -30,7 +27,7 @@ const Hero = () => {
                       href="https://nextjstemplates.com/templates/play"
                       className="inline-flex items-center justify-center rounded-md bg-white px-7 py-[14px] text-center text-base font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-2"
                     >
-                      Download Now
+                      Sign Up
                     </Link>
                   </li>
                   <li>
@@ -56,7 +53,7 @@ const Hero = () => {
                           </clipPath>
                         </defs>
                       </svg>
-                      Star on Github
+                      Try the Demo
                     </Link>
                   </li>
                 </ul>
