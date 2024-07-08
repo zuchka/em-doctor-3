@@ -55,7 +55,7 @@ const Header = () => {
         <div className="container">
           <div className="relative -mx-4 flex items-center justify-between">
             <div className="w-60 max-w-full px-4">
-              <Link
+              {/* <Link
                 href="/"
                 className={`navbar-logo block w-full ${
                   sticky ? "py-2" : "py-5"
@@ -100,9 +100,12 @@ const Header = () => {
                     />
                   </>
                 )}
-              </Link>
+              </Link> */}
             </div>
             <div className="flex w-full items-center justify-between px-4">
+            <h1 className="mb-6 pt-4 text-3xl font-bold leading-snug text-white sm:text-xl sm:leading-snug lg:text-3xl lg:leading-[1.2]">
+                  E.R. Works
+              </h1>
               <div>
                 <button
                   onClick={navbarToggleHandler}

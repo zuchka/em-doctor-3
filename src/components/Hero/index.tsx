@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import Typewriter from "typewriter-effect";
 
 const Hero = () => {
   return (
@@ -16,10 +18,47 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-6 text-3xl font-bold leading-snug text-white sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]">
-                  Chart less. Bill more.
+                  {/* <Typewriter
+                  options={{
+                    strings: [
+                      "E.R.s run better with <i>the Works</i>",
+                      "E.R. Works is the best",
+                      "E.R. Works is the best",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                /> */}
+                  <Typewriter
+                    onInit={(typewriter) => {
+                      typewriter
+                        .changeDeleteSpeed(12)
+                        .typeString("E.R.s run better")
+                        .callFunction(() => {
+                          console.log("String typed out!");
+                        })
+                        .pauseFor(1000)
+                        .deleteChars(6)
+                        .typeString("faster")
+                        .pauseFor(1000)
+                        .deleteChars(6)
+                        .typeString("cheaper")
+                        .pauseFor(1000)
+                        .deleteChars(7)
+                        .typeString("calmer")
+                        .pauseFor(1000)
+                        .callFunction(() => {
+                          console.log("All strings were deleted");
+                        })
+                        .start();
+                    }}
+                  />{" "}
+                  with <i>the Works</i>.
                 </h1>
                 <p className="mx-auto mb-9 max-w-[600px] text-base font-medium text-white sm:text-lg sm:leading-[1.44]">
-                  Chart Gold was made specifically for Emergency Medicine departments and their overworked physician. Its intelligent feedback minimizes the time spent charting and maximizes the opportunities for billing. Doctors should be doctors, not scribes.
+                  We built <i>E.R. Works</i> specifically for emergency medicine
+                  departments. Our software reduces toil, improves patient care,
+                  and increases revenue.
                 </p>
                 <ul className="mb-10 flex flex-wrap items-center justify-center gap-5">
                   <li>
@@ -57,10 +96,10 @@ const Hero = () => {
                     </Link>
                   </li>
                 </ul>
-
                 <div>
                   <p className="mb-4 text-center text-base font-medium text-white/60">
-                    Play is now available for all popular frameworks
+                    E.R. Works integrates seamlessly with Epic, Cerner, and
+                    other EMR systems.
                   </p>
                   <div
                     className="wow fadeInUp flex items-center justify-center gap-4 text-center"
